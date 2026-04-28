@@ -84,7 +84,7 @@ jobs:
         run: pip config set global.index-url "https://:2022-04-11T13:28:14.391Z@time-machines-pypi.sealsecurity.io/"
 
       - name: Install build tooling
-        run: python -m pip install --upgrade pip build wheel==0.34.2
+        run: python -m pip install --upgrade --force-reinstall pip build wheel==0.34.2
 
       - name: Build sdist and wheel
         run: python -m build
